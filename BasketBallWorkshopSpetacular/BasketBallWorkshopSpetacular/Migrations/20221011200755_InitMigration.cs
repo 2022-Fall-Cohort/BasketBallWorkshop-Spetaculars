@@ -4,7 +4,7 @@
 
 namespace BasketBallWorkshopSpetacular.Migrations
 {
-    public partial class initMigration : Migration
+    public partial class InitMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
