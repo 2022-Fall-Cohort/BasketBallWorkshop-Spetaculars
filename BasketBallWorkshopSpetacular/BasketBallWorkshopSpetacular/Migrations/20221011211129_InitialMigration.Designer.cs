@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BasketBallWorkshopSpetacular.Migrations
 {
     [DbContext(typeof(BasketballContext))]
-    [Migration("20221011200755_InitMigration")]
-    partial class InitMigration
+    [Migration("20221011211129_InitialMigration")]
+    partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
