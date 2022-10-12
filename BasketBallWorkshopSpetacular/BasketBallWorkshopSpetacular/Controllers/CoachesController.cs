@@ -57,7 +57,7 @@ namespace BasketBallWorkshopSpetacular.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,TeamId")] Coach coach)
+        public async Task<IActionResult> Create([Bind("Id,Name,Team")] Coach coach)
         {
             if (ModelState.IsValid)
             {
@@ -65,7 +65,7 @@ namespace BasketBallWorkshopSpetacular.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["TeamId"] = new SelectList(_context.Teams, "Id", "Id", coach.TeamId);
+            ViewData["TeamId"] = new SelectList(_context.Teams, "Id", coach.Team.Name);
             return View(coach);
         }
 
