@@ -21,8 +21,4 @@
     <PackageReference Include="WebMatrix.WebData" Version="2.0.30506" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Migrations\" />
-  </ItemGroup>
-
 </Project>
